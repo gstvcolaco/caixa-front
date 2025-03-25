@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/color.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/insere.css">
 </head>
 <body>
     <navbar>
@@ -46,7 +46,7 @@
             <div class="mobile-menu">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Recarregar <i class='bx bx-recycle'></i></a></li>
-                    <li class="nav-item"><a href="insere.html" class="nav-link">Inserir <i class='bx bxs-cloud-upload'></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Inserir <i class='bx bxs-cloud-upload'></i></a></li>
                 </ul>
                 <div class="search-button">
                     <a href="#"><i class='bx bx-search-alt'></i></a>
@@ -54,38 +54,26 @@
             </div>
         </header>
     </navbar>
+    <div class="inserir">
+        <h2>Cadastro de Transações</h2>
+        <label for="date">Data:</label>
+        <input type="date" name="data" id="date" />
 
-    <corpo>
-        <div class="container">
-            <div class="exthato">
-                <div id="txtsaldo">
-                    <h1>Saldo disponivel:</h1>
-                </div>
-                <div id="saldo"><span>R$</span> XXX,XX</div>
-            </div>
+        <label for="description">Descrição:</label>
+        <textarea name="Descricao" id="description"></textarea>
+
+        <label for="value">Valor:</label>
+        <input type="number" name="valor" id="value" step="0.01" />
+
+
+        <div class="tipo-check">
+            <input type="radio" name="Entrada" id="check-entrada">
+            <label for="check-entrada">Entrada</label>
+            <input type="radio" name="Saida" id="check-saida">
+            <label for="check-saida">Saida</label>
         </div>
 
-        <div class="table">
-            <table>
-                <tr>
-                  <th>id</th>
-                  <th>Data</th>
-                  <th>Descrição</th>
-                  <th>Valor</th>
-                  <th>Tipo</th>
-                </tr>
-                <tr>
-                  <th>0</th>
-                  <th>12/22/22</th>
-                  <th>salgado</th>
-                  <th>100.00</th>
-                  <th>entrada</th>
-                </tr>
-              </table>
-        </div>
-    </corpo>
-    
-
+        <button type="submit" id="cadastrar">Cadastrar</button>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
-</html>
