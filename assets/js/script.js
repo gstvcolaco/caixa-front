@@ -9,6 +9,9 @@ function menuShow(){
 }
 
 //segunda data pesquisa
+document.addEventListener("DOMContentLoaded", function () {
+    alternar();
+});
 function alternar() {
     const checkbox = document.getElementById("check");
     const periodo = document.querySelector("periodo");
