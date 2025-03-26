@@ -9,7 +9,13 @@
     font-style: normal;
 }
 
-.container{
+corpo{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.inserir{
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;

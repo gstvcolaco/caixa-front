@@ -1,13 +1,13 @@
 .container{
-    width: 80%;
+    width: 50%;
     background-color: var(--light-gray);
     border-radius: 10px;
     margin: auto;
     margin-top: 6rem;
 }
 .extrato{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 5rem;
 }
 #txtsaldo{
     margin: auto;
@@ -18,10 +18,13 @@
 }
 #saldo{
     margin: auto;
+    letter-spacing: 1px;
+    font-size: large;
 }
 #saldo span{
     color: var(--primary);
-    font-size: 1.2rem;
+    font-size: x-large;
+    font-weight: 700;
 }
 
 /*table*/

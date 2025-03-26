@@ -25,7 +25,7 @@
 		<link rel="stylesheet" href="assets/css/color.css" />
 		<link rel="stylesheet" href="assets/css/fonts.css" />
 		<link rel="stylesheet" href="assets/css/global.css" />
-		<link rel="stylesheet" href="assets/css/insere.css" />
+		<link rel="stylesheet" href="assets/css/pesquisa.css" />
 	</head>
 	<body>
 		<navbar>
@@ -50,7 +50,7 @@
 						</ul>
 					</div>
 					<div class="search-button">
-						<a href="pesquisa.html"><i class="bx bx-search-alt"></i></a>
+						<a href="#"><i class="bx bx-search-alt"></i></a>
 					</div>
 
 					<div class="mobile-menu-icon">
@@ -73,47 +73,23 @@
 						</li>
 					</ul>
 					<div class="search-button">
-						<a href="pesquisa.html"><i class="bx bx-search-alt"></i></a>
+						<a href="#"><i class="bx bx-search-alt"></i></a>
 					</div>
 				</div>
 			</header>
 		</navbar>
-			<div class="inserir">
-				<h2>Cadastro de Transações</h2>
-				<label for="date">Data:</label>
-				<input type="date" name="data" id="date" />
-
-				<label for="description">Descrição:</label>
-				<textarea name="Descricao" id="description"></textarea>
-
-				<label for="value">Valor:</label>
-				<input type="number" name="valor" id="value" step="0.01" />
-
-				<div class="radio-input">
-					<label class="label">
-						<input
-							type="radio"
-							id="value-1"
-							checked=""
-							name="value-radio"
-							value="value-1" />
-						<p class="text">Entrada</p>
-					</label>
-					<label class="label">
-						<input
-							type="radio"
-							id="value-2"
-							name="value-radio"
-							value="value-2" />
-						<p class="text">Saida</p>
-					</label>
-				</div>
-				<div class="buttons">
-					<button type="submit" id="cadastrar"><span>Salvar</span></button>
-					<button type="submit" id="cancelar"><span>Cancelar</span></button>
-				</div>
-				<br />
-			</div>
+<pesquisar>
+	<Label>Data inicial</Label>
+			<input type="date" id="data" ><br>
+			<label>Extrato de um período?</label>
+			<input type="checkbox"  id="check" onclick="alternar()"><br>
+			<periodo>
+				<label>Data final</label>
+				<input type="date" id="data"><br>
+			</periodo>
+			<button type="submit">Ver extrato</button>
+			<button type="button"><a>Cancelar</a></button>
+</pesquisar>
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>
