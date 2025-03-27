@@ -8,21 +8,32 @@ function menuShow(){
     }
 }
 
-//segunda data pesquisa
-document.addEventListener("DOMContentLoaded", function () {
-    alternar();
-});
-function alternar() {
-    const checkbox = document.getElementById("check");
-    const periodo = document.querySelector("periodo");
-    periodo.style.display = "none";
-    if (checkbox.checked) {
-        periodo.style.display = "flex";
-    } else {
-        periodo.style.display = "none";
+function alterar(){
+    var check = document.querySelector("#check")
+    var label = document.querySelector(".lboff")
+    var input = document.querySelector(".ipoff")
+    label.id="lboff"
+    input.id="ipoff"
+    if(check.checked){
+        label.id="on"
+        input.id="on"
+    } else if(!check.checked){
+        label.id="lboff"
+        input.id="ipoff"
     }
 }
 
 //reload
-//window.location.reload()
+var btrld = document.querySelector(".rld")
+btrld.addEventListener('click', reload)
+function reload(){
+    window.location.reload()
+    console.log("ok")
+}
+//volta para index
+var logo = document.querySelector(".nav-logo")
+logo.addEventListener('click', foridx)
+function foridx(){
+    window.location.href = "index.html"
+}
 
