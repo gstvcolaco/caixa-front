@@ -13,9 +13,10 @@ body{
     margin: auto;
     top: (100dvh - 2dvh);
     text-align: center;
-    height: 28rem;
+    height: auto;
     font-size: large;
     font-weight: 600;
+    padding-top: 10px;
 }
 .inserir h2{
     color: var(--primary);

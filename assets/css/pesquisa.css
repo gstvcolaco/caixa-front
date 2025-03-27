@@ -17,6 +17,10 @@ body{
     font-weight: 600;
     justify-content: center;
     text-align: center;
+    padding-top: 10px;
+}
+.pesquisar h2{
+  color: var(--primary);
 }
 label{
     color: var(--white);
